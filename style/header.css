@@ -1,0 +1,293 @@
+.container>header,
+.container>header>nav{
+    width: 100%;
+    height: 28%;
+    background-color: rgb(225, 234, 234);
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-montserrat);
+    /* font-size: 11px; */
+}
+/* nav style */
+.container>header>nav{
+    position: fixed;
+    background-color: green;
+    background-color: var(--menu-color);
+}
+/* top_nav style */
+.container>header>nav>.top_nav{
+    width: 100%;
+    height: 66%;
+    position: relative;
+    background-color: var(--nav-footer-color);
+    box-shadow: 0 2px 10px black;
+    display: flex;
+    padding: var(--padd);
+}
+.container>header>nav>.top_nav>.logo{
+    width: 50%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+}
+.container>header>nav>.top_nav>.head_menu{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+.container>header>nav>.top_nav>.head_menu>ul,
+.container>header>nav>.menu>.left>ul{
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--nav-footer-color); */
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* color: white; */
+    
+}
+.container>header>nav>.top_nav>.head_menu>ul>li,
+.container>header>nav>.menu>.left>ul>li{
+    padding: 15px 8px 15px 10px;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    /* color: white; */
+    
+}
+.container>header>nav>.top_nav>.head_menu>ul>li>.drobdown{
+    font-size: 12px;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    /* padding: 32px 15px 20px; */
+}
+.container>header>nav>.top_nav>.head_menu>ul>li>span,
+.container>header>nav>.menu>.left>ul>li>span{
+    font-size: 15px;
+    color: white;
+    vertical-align: middle;
+}
+.container>header>nav>.top_nav>.head_menu>ul>li:nth-child(4)>a,
+.container>header>nav>.top_nav>.head_menu>ul>li:nth-child(4)>span{
+    color: var(--hover-color);
+}
+.container>header>nav>.top_nav>.head_menu>ul>li:last-child{
+    padding: 15px 10px;
+}
+.container>header>nav>.top_nav>.head_menu>ul>li:last-child>img{
+    border: 1px solid white;
+    padding: 1px;
+    border-radius: 2px;
+}
+.container>header>nav>.top_nav>.head_menu>ul>li>.drobdown,
+.container>header>nav>.menu>.left>ul>li>.drobdown{
+    position: absolute;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    width: 243px;
+    height: 0px;
+    list-style: none;
+    right: 0;
+    background-color: var(--menu-color);
+    text-align: right;
+}
+/* hover */
+.container > header > nav > .top_nav > .head_menu > ul > li:hover{
+    background-color: var(--menu-color);
+}
+.container > header > nav > .top_nav > .head_menu > ul > li:hover > #down,
+.container > header > nav > .menu > .left > ul > li:hover > #down{
+    transform: rotate(180deg) translateY(3px);
+ 
+}
+.container > header > nav > .top_nav > .head_menu > ul > li:hover >.drobdown,
+.container > header > nav > .menu > .left > ul > li:hover >.drobdown{
+    height: 260px;
+    
+}
+.container > header > nav > .top_nav > .head_menu > ul > li >.drobdown>li:hover>a,
+.container > header > nav > .menu > .left > ul > li >.drobdown>li:hover>a{
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+.container > header > nav > .menu > .left > ul >li:hover>a,
+.container > header > nav > .menu > .left > ul >li:hover>span{
+    color: var(--hover-color);
+}
+
+.container > header > nav > .top_nav > .head_menu > ul > li:hover:nth-child(4) >.drobdown{
+    height: 105px;
+    
+}
+
+/* drobdorn */
+.container > header > nav > .top_nav > .head_menu > ul > li >.drobdown,
+.container > header > nav > .menu > .left > ul > li >.drobdown{
+    position: absolute;
+    width: 243px;
+    height: 0px;
+    list-style: none;
+    overflow: hidden;
+    right: 0px;
+    top: 46px;
+    text-align: right;
+    background-color: var(--menu-color);
+    transition: 0.3s ease-in-out;
+}
+.container > header > nav > .top_nav > .head_menu > ul > li >.drobdown>li:first-child{
+    border-top: 1px solid gray;
+    padding-left: 20px;
+}
+.container > header > nav > .top_nav > .head_menu > ul > li >.drobdown>li:nth-child(6){
+    border-top: 1px solid gray;
+    /* padding-left: 20px;   */
+}
+.container > header > nav > .top_nav > .head_menu > ul > li >.drobdown>li,
+.container > header > nav > .menu > .left > ul > li >.drobdown>li{
+    padding: 8px 12px;
+}
+.container > header > nav > .top_nav > .head_menu > ul > li >.drobdown>li>a,
+.container > header > nav > .menu > .left > ul > li >.drobdown>li>a{
+    font-weight: 400;
+}
+/* menu */
+.container>header>nav>.menu{
+  width: 100%;
+  height: 34%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padd); 
+  background-color: var(--menu-color); 
+}
+.container>header>nav>.menu>.left,
+.container>header>nav>.menu>.right{
+   /* width: 50%; */
+   height: 100%;
+   /* background-color:green; */  
+}
+.container>header>nav>.menu>.left>ul>li{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 23px 15px 20px;
+}
+.container>header>nav>.menu>.right{
+    /* background-color: yellow; */
+    font-family: var(--font-montserrat);
+    color: white;
+    font-size: 10px;
+
+
+}
+.container>header>nav>.menu>.right>.rate{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.container>header>nav>.menu>.right>.rate>li{
+    margin: 0 40px;
+}
+.container>header>nav>.menu>.right>.rate>li{
+    margin-right: 0;
+}.container>header>nav>.menu>.right>.rate>li>span,
+.container>header>nav>.menu>.right>.rate>li>img{
+    vertical-align: middle;
+    /* background-color: gold; */
+}
+.container>header>nav>.menu>.right>.rate>li>img{
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 2PX;
+    padding: 1px;
+    margin-bottom: 2px;
+}
+.container>header>nav>.menu>.left>ul>li>.drobdown,
+.container > header > nav > .menu > .left > ul > li:hover >.drobdown{
+    left: 10;
+    top: 63px;
+    text-align: left;
+    /* height: 270px; */
+}
+
+/* menu style */
+.container>header>nav>.menu{
+    width: 100%;
+    height: 34%;
+    background-color: var(--menu-color);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padd);
+}
+.container>header>nav>.menu>.left,
+.container>header>nav>.menu>.right{
+    height: 100%;
+}
+.container>header>nav>.menu>.left>ul>li{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 23px 15px 20px;
+}
+.container>header>nav>.menu>.left>ul>li:first-child{
+    padding-left: 0;
+}
+.container>header>nav>.menu>.left>ul>li>.drobdown>li:first-child{
+    border-top: 1px solid var(--hover-color);
+}
+/* .container>header>nav>.menu>.right{ */
+    /* background-color: gold; */
+
+
+.container>header>nav>.menu>.left>ul>li>.drobdown{
+    left: 0;
+    top: 63px;
+    text-align: left;
+}
+.container>header>nav>.menu>.left>ul>li:hover:nth-child(1)>.drobdown{
+    height: 280px;
+    width: 280px;
+}
+.container>header>nav>.menu>.left>ul>li:hover:nth-child(2)>.drobdown{
+    height: 235px;
+    width: 280px;
+}
+.container>header>nav>.menu>.left>ul>li:hover:nth-child(3)>.drobdown{
+    width: 280px;
+    height: 239px;
+}
+.container>header>nav>.menu>.left>ul>li:hover:nth-child(4)>.drobdown{
+    width: 280px;
+    height: 446px;
+}
+/* dropdown top-nav and menu */
+.container>header>nav>.top_nav>.head_menu>ul>li>.drobdown>li:first-child,
+.container>header>nav>.menu>.left>ul>li>.drobdown>li:first-child{
+    /* border-top: 1px solid ; */
+    padding-top: 20px;
+}
+.container>header>nav>.top_nav>.head_menu>ul>li>.drobdown>li,
+.container>header>nav>.menu>.left>ul>li>.drobdown>li{
+    padding: 8px 12px;
+}
+.container>header>nav>.top_nav>.head_menu>ul>li>.drobdown>li>a,
+.container>header>nav>.menu>.left>ul>li>.drobdown>li>a{
+    font-weight: 500;
+    font-size: 12px;
+}
+.container>header>nav>.top_nav>.head_menu>ul>li>.drobdown>li:nth-child(5){
+    /* border-bottom: 1px solid gray; */
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+.container>header>nav>.top_nav>.head_menu>ul,
+.container>header>nav>.menu>.left>ul{
+   width: 100%;
+   height: 100%;
+   list-style: none;
+}

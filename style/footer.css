@@ -1,0 +1,105 @@
+.container>footer{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--nav-footer-color);
+}
+.container>footer>.row-card{
+    display: flex;
+}
+.container>footer>.row-card>.card{
+    width: 25%;
+    background-color: gray;
+    border-right: 1px solid #555;
+    text-align: center;
+}
+
+.container>footer>.row-card>.card>img{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.container>footer>.row-card>.card>p,
+.container>footer>.row-card>.card>p>a{
+   color: white; 
+   text-align: start;
+   line-height: 24px;
+   font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.container>footer>.row-card>.card>p>a{
+    font-weight: 600; 
+}
+.container>footer>.row-card>.card>p>a:hover{
+    text-decoration: underline;
+}
+.container>footer>.about-ac{
+    width: 100%;
+    background-color: var(--menu-color);
+}
+.container>footer>.about-ac>.detail{
+    width: 50%;
+    /* height: 100%; */
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.container>footer>.about-ac>.detail>ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;   
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.container>footer>.about-ac>.detail>ul:nth-child(2){
+    color: white;
+    margin: 30px  0;
+    text-align: center;
+}
+.container>footer>.about-ac>.detail>ul>li{
+    padding: 0 15px;
+    text-align: center;
+}
+.container>footer>.about-ac>.detail>.achievment{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+  
+}
+.container>footer>.about-ac>.detail>.achievment>img
+{
+    width: 170px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+.container>footer>.about-ac>.detail>.social{
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12PX;
+    color: white;
+}
+.container>footer>.about-ac>.detail>.social>ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container>footer>.about-ac>.detail>.social>ul>li>img{
+    width: 35px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid rgb(55, 55, 130);
+    margin: 0 3px;
+}
+.container>footer>.about-ac>.detail>.social>ul>li>img:hover{
+    border: 1px solid white;
+}
